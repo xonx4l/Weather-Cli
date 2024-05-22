@@ -69,6 +69,17 @@ struct Wind {
         wind_speed
         );
 
+      // Coloring the weather text based on weather conditions 
+         let weather_text_colored:coloredString = match description.as_str(){
+              "clear sky" => weather_text.yellow(),
+               "few clouds" | "scattered clouds" | "broken clouds" =>
+               weather_text.bright_blue(),
+               "overcast clouds" | "mist" | "haze" | "smoke" | "sand" |
+               "dust"| "fog" |"squalls" => weather_text.dimmed(),
+               "shower rain"| |"rain" | "thunderstorm" | "snow" => weather_text.bright_cyan(),
+              _=> weather_text.normal(),
+
+
         // function to get feeling based on temperature 
          fn get_temp_feeling(temperature:f64) -> &'static str {
              if temperature <0.0 {
