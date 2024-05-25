@@ -13,5 +13,5 @@ Simple and user-friendly command-line interface.
 
 ## Prerequisites
 
-Rust and Cargo installed
-An API key from OpenWeatherMap (free tier available)
+-> Rust and Cargo: Make sure Rust and Cargo are installed on your machine.
+-> OpenWeatherMap API Key: Obtain an API key from OpenWeatherMap (free tier available).
