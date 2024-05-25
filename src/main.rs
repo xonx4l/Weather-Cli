@@ -79,7 +79,7 @@ fn get_temperature_feeling(temp: f64) -> &'static str {
 }
 
 fn main() {
-    println!("{}", "Welcome to the Enhanced Weather Report!".bright_yellow());
+    println!("{}", "Welcome to the Weather Report!".bright_yellow());
 
     let api_key = "YOUR_API_KEY_HERE"; // Replace with your actual API key
 
@@ -105,7 +105,7 @@ fn main() {
         let response = response.trim().to_lowercase();
 
         if response != "yes" {
-            println!("{}", "Thank you for using the Enhanced Weather Report!".bright_yellow());
+            println!("{}", "Thank you for using the Weather Report!".bright_yellow());
             break;
         }
     }
